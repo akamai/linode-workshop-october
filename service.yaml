@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: levelup-service
+  name: sonos-api-nocode-service
   annotations:
     service.beta.kubernetes.io/linode-loadbalancer-default-protocol: http
     service.beta.kubernetes.io/linode-loadbalancer-port-443: '{ "tls-secret-name": "mqtttest", "protocol": "https" }'
@@ -13,5 +13,5 @@ spec:
     protocol: TCP
     targetPort: 1880
   selector:
-    app: node-api
+    app: sonos-api-nocode
   sessionAffinity: None

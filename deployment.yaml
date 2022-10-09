@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: node-api
+  name: sonos-api-nocode
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: node-api
+      app: sonos-api-nocode
   template:
     metadata:
       labels:
-        app: node-api
+        app: sonos-api-nocode
     spec:
       containers:
-      - name: node-api
-        image: brianapley/node-api
+      - name: sonos-api-nocode
+        image: brianapley/sonos-api-nocode
         imagePullPolicy: Always
         ports:
         - containerPort: 1880

@@ -153,4 +153,12 @@ This command output should show a node-api deployment, with an external (Interne
 
 With the work above done, you've successfully setup a kubernetes cluster in a linode region, and deployed an endpoint application to it. 
 
+# Using the deployed service
 
+Follow the instructions in this repository to use the deployed service - https://github.com/ccie7599/sonos-api-nocode
+
+Some notes and differences when deploying this service via LKE vs. docker-
+
+-The hostname of the service will be the IP address recorded in step 6 above (the external service IP address via ```kubectl get services -A``` command.
+
+-The service deployment included both a port mapping (port 443 to 1880), and enabling TLS. So the URL of the service will be https://{service_ip}/ui for the Control and Auth APIs, and https://{service_ip}/ for the node-RED palette.

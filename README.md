@@ -33,7 +33,6 @@ The workshop scenario builds the following components and steps-
 
 
 ### Build a Secure Shell Linode
-![shell](https://user-images.githubusercontent.com/19197357/184126449-454162f9-142f-47e6-ab73-3f1da5e5f456.png)
 
 We'll first create a Linode using the "Secure Your Server" Marketplace image. This will give us a hardened, consistent environment to run our subsequent commands from. 
 
@@ -83,7 +82,6 @@ Next step is to install Terraform. The repository files include a terraform.sh s
 ```
 
 ### Provision LKE Cluster using Terraform
-![tf](https://user-images.githubusercontent.com/19197357/184130473-91c36dfc-072b-43f7-882b-07407d7f2266.png)
 
 Next, we build the LKE cluster, with the terraform files that are included in this repository, and pulled into the Linode Shell from the prior git command.
 

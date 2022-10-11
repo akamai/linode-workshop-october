@@ -13,6 +13,8 @@ Package of template files, examples, and illustrations for the Linode Edge API W
 
 ### Exercise Diagram
 
+<img width="919" alt="image" src="https://user-images.githubusercontent.com/19197357/195091139-60b68bb3-7bd6-4faa-9eb0-3fff966e7e75.png">
+
 ## Step by Step Instructions
 
 ### Overview
